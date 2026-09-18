@@ -1,0 +1,10 @@
+{
+  "encoder": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "embedding_dimension": 384,
+  "hidden_dimension": 128,
+  "num_classes": 3,
+  "epochs": 10,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "seed": 42
+}
