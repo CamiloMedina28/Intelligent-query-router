@@ -1,0 +1,50 @@
+{
+  "tfidf": {
+    "status": "completed",
+    "metrics": {
+      "accuracy": 0.9601160261058739,
+      "balanced_accuracy": 0.9601086167156074,
+      "precision_macro": 0.9601946878041998,
+      "recall_macro": 0.9601086167156074,
+      "f1_macro": 0.9600826253194077,
+      "f1_weighted": 0.9600831958021679,
+      "log_loss": 0.22490192092761455
+    }
+  },
+  "frozen": {
+    "status": "completed",
+    "metrics": {
+      "accuracy": 0.9477882523567803,
+      "balanced_accuracy": 0.9477755675539136,
+      "precision_macro": 0.947893002214648,
+      "recall_macro": 0.9477755675539136,
+      "f1_macro": 0.9477535581263798,
+      "f1_weighted": 0.9477625325157849,
+      "log_loss": 0.14807410538196564
+    }
+  },
+  "partial_fine_tuning": {
+    "status": "completed",
+    "metrics": {
+      "accuracy": 0.9557650471356055,
+      "balanced_accuracy": 0.9557386883900097,
+      "precision_macro": 0.9559128526486815,
+      "recall_macro": 0.9557386883900097,
+      "f1_macro": 0.9555781380751904,
+      "f1_weighted": 0.9555895316708137,
+      "log_loss": 0.1298513263463974
+    }
+  },
+  "full_fine_tuning": {
+    "status": "completed",
+    "metrics": {
+      "accuracy": 0.9804205946337926,
+      "balanced_accuracy": 0.9804063654447287,
+      "precision_macro": 0.9809637519890334,
+      "recall_macro": 0.9804063654447287,
+      "f1_macro": 0.9804457567809802,
+      "f1_weighted": 0.9804476557699456,
+      "log_loss": 0.09172804653644562
+    }
+  }
+}

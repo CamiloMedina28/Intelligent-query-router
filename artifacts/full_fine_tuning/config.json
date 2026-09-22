@@ -1,0 +1,13 @@
+{
+  "training_mode": "full_fine_tuning",
+  "encoder": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "embedding_dimension": 384,
+  "num_classes": 3,
+  "epochs": 2,
+  "batch_size": 8,
+  "encoder_learning_rate": 1e-05,
+  "head_learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "trainable_parameter_count": 117703427,
+  "seed": 42
+}

@@ -40,7 +40,6 @@ Processed datasets are stored in `data/processed/`:
 | `training.csv` | Fits the classification head |
 | `validation.csv` | Tracks loss and evaluates validation performance |
 | `test.csv` | Final evaluation across all three classes |
-| `ambiguous_holdout.csv` | Dedicated review of ambiguous examples |
 
 Each CSV must include `query` and `path` columns. Training requires all three
 labels, `0`, `1`, and `2`; class-weight calculation fails if any class is

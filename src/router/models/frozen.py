@@ -8,12 +8,12 @@ from torch.utils.data import DataLoader, TensorDataset
 
 EMBEDDINGS_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 DIMENSION = 384
-DIMENSION_OCULTA = 128
+HIDDEN_DIMENSION = 128
 NUM_CLASSES = 3
 
 
 class FrozenSentenceTransformer:
-    """Encoder usado únicamente para generar embeddings."""
+    """Encoder only used to generate embeddings."""
 
     def __init__(self, model_name=EMBEDDINGS_MODEL, device=None):
         self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
@@ -24,7 +24,7 @@ class FrozenSentenceTransformer:
             parameter.requires_grad = False
 
     def generate_embeddings(self, queries, batch_size=32):
-        """Genera embeddings sin calcular gradientes."""
+        """Generates embeddings without calculating gradients."""
 
         queries = list(queries)
 
@@ -56,7 +56,7 @@ class ClassificationFrozenLinearHead(nn.Module):
     def __init__(
         self,
         embedding_dim=DIMENSION,
-        hidden_dim=DIMENSION_OCULTA,
+        hidden_dim=HIDDEN_DIMENSION,
     ) -> None:
         super().__init__()
         self.classifier = nn.Sequential(
